@@ -1,0 +1,16 @@
+.background {
+    background-color: lightgray;
+}
+.img-avatar {
+    display: block;
+    width: 300px;
+}
+.tarjetas-producto {
+    min-height: 500px;
+}
+.Wing{
+    width: 20%;
+}
+img {
+    width: 100%;
+}
