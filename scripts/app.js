@@ -382,5 +382,13 @@ Vue.filter('mayuscula', function (value) {
 var app = new Vue({
     el: ".contenedor",
     data: {
+    },
+    methods: {
+        traerPeliculas: function () {
+            console.log('megameg')
+        }
+    },
+    mounted() {
+        this.traerPeliculas()
     }
 });

@@ -1,0 +1,301 @@
+GRILLA DE BOOTSTRAP
+container
+row
+column
+
+Reglas para usar la grilla con Bootstrap
+1- Es necesario tener container o container-fluid, seguido de row (o rows), seguido de col (o cols)
+2- Los elementos siempre deben estar en ese orden: container->row->col
+    2.5 *Excepto cuando anidamos, en ese caso, row puede ser hijo de un col: container->row->col->row->col
+3- Cada uno de estas clases debe estar en su propia etiqueta
+4- Cada uno de los elementos siempre tiene que ser hijo directo del anterior.
+
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+
+COLORES CONTEXTUALES
+primary
+secondary
+success
+danger
+warning
+info
+light
+dark
+white
+transparent
+
+ALINEACION [valor]
+start
+center
+end
+
+[breakpoint]
+OMITIR (Extra Small en adelante)
+sm (Small)
+md (Medium)
+lg (Large)
+xl (Extra Large)
+xxl (Extra Extra Large)
+
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+
+COLOR DE FONDO
+bg-[color]
++ bg-gradient
+
+COLOR DE TEXTO
+text-[color]
+
+ALINEACION DE TEXTO
+text-[valor]
+text-[breakpoint]-[valor]
+
+FONT SIZE
+fs-[valor 1 a 6] 
+
+El valor cordina con los tamaños de h1 a h6
+
+FONT WEIGHT
+fw-bold
+fw-bolder
+fw-normal
+fw-light
+fw-lighter
+
+FONT STYLE
+fst-italic
+fst-normal
+
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+
+MARGENES Y PADDING
+[Propiedad]-[tamaño - 0 a 5 ó auto]
+[Propiedad][lado(s)]-[breakpoint]-[tamaño - 0 a 5 ó auto]
+
+
+[Propiedad]
+m -> margen
+p -> padding
+
+[Lados(s)]
+t -> top (arriba)
+b -> bottom (abajo)
+s -> start (izquierda)
+e -> end (derecha)
+x -> start y end
+y -> top y bottom
+SE PUEDE OMITIR PARA CAMBIAR LOS 4 EN SIMULTANEO
+
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+
+WIDTH
+w-25 - 25%
+w-50 - 50%
+w-75 - 75%
+w-100 - 100%
+w-auto - (Lo que le corresponda al tipo de elemento)
+
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+
+BORDERS
+border
+border-[lado]
+
+[Lados]
+t -> top (arriba)
+b -> bottom (abajo)
+s -> start (izquierda)
+e -> end (derecha)
+
+COLOR DE BORDE
+border + border-[color]
+
+ANCHO DE BORDE
+border + border-[width 1 a 5]
+
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+
+BORDES REDONDEADOS (También funcionan para imagenes!)
+rounded
+rounded-top
+rounded-end
+rounded-bottom
+rounded-start
+rounded-circle
+rounded-pill
+
+rounded-[size 0 a 3]
+
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+
+PROPIEDADES DE DISPLAY
+
+d-[propiedad]
+
+[propiedad]
+block
+inline-block
+none
+flex
+inline-flex
+grid
+inline-grid
+
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+
+BUTTONS
+
+btn -> da formato y comportamiento de botón (pero no estilo)
+btn-[color] -> da estilo contextual
+btn-outline-[color] -> da estilo contextual con filete
+
+
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+
+CARDS
+
+>> Estructura
+
+card -> contenedor principal
+    card-body-> contenido principal
+        card-title -> titulo (aplicado normalmente a elementos h*)
+		card-subtitle -> subtitulo (aplicado normalmente a elementos h*)
+		card-text -> texto principal (aplicado normalmente a elementos p)
+		card-link -> hipervínculos simples
+		[Otros elementos si asi lo desearamos, botónes, imagenes, etc.]
+    card-img -> imagen (aplicado normalmente a un tag img)
+    card-img-top -> imagen superior (aplicado normalmente a un tag img)
+	card-img-bottom -> imagen inferior (aplicado normalmente a un tag img)
+    card-header -> encabezado de la tarjeta
+	card-footer -> footer de la tarjeta
+
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+
+LIST GROUPS
+
+>> Estructura
+list-group -> contenedor principal
+	list-group-item -> item de la lista
+
+
+>> Clases
+	Para list-group:
+		list-group-numbered -> genera una lista numerada
+		list-group-horizontal -> lista horizontal
+		list-group-flush -> remueve los bordes y márgenes laterales para anidar en otros elementos. (Incompatible list-group-horizontal)
+
+    Para list-group-item:
+		active -> muestra un item como activo
+		disabled -> muestra un item como desactivado
+		list-group-item-action -> convierte al item en un botón (el item tiene que ser un elemento <a>)
+		list-group-item-[color] -> versiones contextuales
+
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+
+BLOCKQUOTES
+
+>> Estructura
+	blockquote -> cita principal
+		[El contenido de la cita, normalmente en un elemento p]
+		blockquote-footer -> autor
+
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+
+ACCORDION
+
+>> Estructura
+	accordion -> contenedor principal
+		accordion-item -> item de nuestro acordion
+			accordion-header -> el encabezado de nuestro header
+                accordion-button + (collapsed) -> el boton que controla el sistema de colapso
+			    +atributo: data-bs-toggle="collapse" -> la funcion del boton (Hacer "toggle", es decir prender/apagar a la funcion collapse (colapsar un contenido))
+			    +atributo: data-bs-target="[ID]" -> Que contenido tiene que colapsar/desplegar
+
+			accordion-collapse + collapse + (show) -> el elemento colapsable de nuestro acordión
+			+atributo: data-bs-parent="[ID]" (OPCIONAL) -> El id del acordion al que pertenece, los agrupa y solo permite uno abierto a la vez
+				accordion-body -> el contenido de nuestro acordion
+
+>> Clases
+
+	Para accordion
+		accordion-flush -> remueve los bordes y margenes laterales para anidar en otros elementos. 
+
+
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+
+NAV BAR
+ 
+>> Estructura
+
+navbar -> contendor principal (normalmente se incluye en una etiqueta nav)
+	navbar-brand -> marca o logo
+	navbar-toggler -> el boton que desplegara el menu
+	+atributo: data-bs-toggle="collapse" -> la función del botón (Hacer "toggle", es decir prender/apagar a la funcion collapse (colapsar un contenido))
+	+atributo: data-bs-target="[ID]" -> Que contenido tiene que colapsar/desplegar
+		navbar-toggler-icon -> el icono fisico del menu desplegable.
+
+	colapse + navbar-collapse + [ID] -> el elemento que se colapsará/desplegará (Siempre con un ID para poder seleccionarlo)
+		navbar-nav -> contenedor de lista de links
+			nav-item -> grupo de elementos que conforman un link
+				nav-link (active/disable) -> link de nuestro nav (Usualmente aplicado a <a>)
+
+
+>> Classes
+
+Para navbar
+	navbar-expand-[tamaño] -> define en que breakpoint se expande el contenido (El estado "natural" de una navbar es el menú hamburguesa)
+	navbar-dark/navbar-light -> esquema de colores general
+	fixed-top/fixed-bottom -> fija en top, bottom
+	sticky-top -> Existe en su lugar, pero queda pegado al bajar con scroll
+
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+
+CAROUSEL
+
+>> Estructura
+
+carousel + slide + [ID] -> contendor principal
++atributo: data-bs-ride="carousel" -> activa el carousel
+
+    carousel-inner -> contenedor para nuestros slides
+        carousel-item (active) -> contenedor de cada slide individual
+            etiqueta img, picture o div -> contenido de nuestro slide
+    
+    [button] carousel-control-prev/next -> boton para ir al siguiente/anterior slide
+    +atributo: data-bs-target -> el id de nuestro carousel
+    +atributo: data-bs-slide -> la orden del boton
+        [span]carousel-control-[prev/next]-icon -> el icono del boton
+            [span] visually-hidden -> Texto no visible, pero necesario porque sino solo hay un icono y los robots no nos entienden
+
+    carousel-indicators -> contenedor de nuestros indicadores
+        [button] (active)
+        +atributo: data-bs-target -> el id de nuestro carousel
+        +atributo: data-bs-slide-to -> el slide al cual esta vinculado (siempre empezando desde 0)
+
+>> Clases
+
+	Para carousel
+		carousel-dark/carousel-light -> esquema de colores general
+		carousel-fade -> efecto fade en la animacion
+
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+
+FORMULARIOS
+
+form-control -> para los inputs/textareas
+form-control-sm/lg -> versiones pequeña y grande de form-control
+form-select -> para selects
+form-select-sm/lg -> versiones pequeña y grande de form-select
+form-label -> para las labels/etiquetas
+form-text -> para textos descriptivos (siempre con un id vincualado a un aria-labeledby en el input correspondient)
+form-control-color -> para el selector de colores
+
+form-check -> para contener checks/radios y labels
+form-check-inline -> para contener varios checks/radios inline
+form-check + form-switch -> nuevo formato para hecks/radios 
+
+input-group -> para contener inputs con decoracion
+	input-group-text -> para la decoracion
+
+form-floating -> para contener labels flotantes
+	SIEMPRE DEBEN TENER PLACEHOLDER Y EL LABEL SIEMPRE TIENE QUE ESTAR DESPUES DEL INPUT (El placeholder no ser verá)
